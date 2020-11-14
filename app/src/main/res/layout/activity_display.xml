@@ -4,32 +4,120 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="50dp"
-    tools:context=".BirthdateActivity">
+    tools:context=".DisplayActivity">
 
     <TextView
-        android:id="@+id/tvInputFirstName"
+        android:id="@+id/Reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"
+        android:text="REGISTRATION FORM"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/purple_700"
+    />
+
+    <TextView
+        android:id="@+id/FirstName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@color/teal_200"
+        android:paddingStart="30dp"
+        android:paddingLeft="10dp"
+        android:paddingEnd="30dp"
+        android:paddingRight="10dp"
         android:textColor="@color/black"
-        android:layout_marginTop="200dp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textSize="30dp"
+        app:layout_constraintTop_toBottomOf="@id/Reg" />
+
+    <TextView
+        android:id="@+id/LastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@color/teal_200"
+        android:paddingStart="30dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/FirstName" />
+
+    <TextView
+        android:id="@+id/Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@color/teal_200"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/LastName"
+        />
+    <TextView
+        android:id="@+id/Age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginStart="100dp"
+        android:background="@color/teal_200"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Email"
         />
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tvInputAge"
+    <TextView
+        android:id="@+id/PhoneNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvInputFirstName"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:background="@color/teal_200"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
         android:textColor="@color/black"
-        android:textSize="30dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Age"
+        />
+
+    <TextView
+        android:id="@+id/BirthDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:background="@color/teal_200"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/PhoneNumber"
         />
 
 
